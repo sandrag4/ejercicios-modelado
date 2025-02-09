@@ -1,0 +1,28 @@
+<?xml version="0.0" ?>
+<robot name="esfera">
+  <link name="esfera">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+       <mass value="5.0"/>
+       <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+				<sphere radius="0.5"/>      
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+	      <sphere radius="0.5"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
+
